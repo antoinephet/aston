@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ma page de Javascript</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $("button.cache").click(function(){
+
+                $("p").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("button.montre").click(function(){
+
+                $("p").show();
+            });
+        });
+
+        $(document).ready(function(){
+            $("button.toggle").click(function(){
+
+                //$("p").toggle("slow");
+                $("p").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("button.fade").click(function(){
+
+                //$("p").toggle("slow");
+                $("p").fadeOut(5000);
+                $("p").fadeIn(5000);
+
+            });
+        });
+
+        $("#monImage").fadeOut(5000).delay(300).fadeIn(5000);
+
+        //$("#monImage").fadeOut(5000).delay(300).fadeIn(5000);
+        /*function FaireClignoterImage(){
+            $("#monImage").fadeOut(5000).delay(300).fadeIn(5000);
+
+        }*/
+
+
+        
+    </script>
+</head>
+<body>
+<style type="text/css">
+    
+    .mauvais{
+        color : red;
+    }
+
+    .mauvais-message{
+
+        background-color: red;
+    }
+</style>
+
+<h2>Heading de la page</h2>
+<p>Mon paragraphe</p>
+<p>Mon autre paragraphe</p>
+<img id="monImage" src="maxresdefault.jpg" alt="Mon image">
+<button class="cache">Click moi</button>
+<button class="montre">2eme bouton</button>
+<button class="toggle">3eme bouton</button>
+<button class="fade">4eme bouton</button>
+<input id="checkAll" type="checkbox" />Cocher / Décocher
+<ul id='magazine'>
+    <li><input type="checkbox" />Mag1</li>
+    <li><input type="checkbox" />Mag2</li>
+    <li><input type="checkbox" />Mag3</li>
+    <li><input type="checkbox" />Mag4</li>
+</ul>
+
+<form>
+    <textarea id="message" name="message" cols="120" rows="10"></textarea>
+    <p id="compteur" >0 mots | 0 Caractere </p>
+</form>
+
+
+<main class="container">
+    <h1>About me</h1>
+    <div class="demo test">
+        <p class="test">
+            Ceci est un test...
+        </p>
+        <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <p class="test">
+        Ceci est un test...
+    </p>
+    
+    <div class="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <div class="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <form method="post" name="formule" onSubmit="return verif();" action="#">
+        <div class="form-group">
+            <label for="civilite">Civilité</label>
+            <input type="radio" name="mr" value="mr" checked><span>M.</span>
+            <input type="radio" name="mme" value="mme"><span>Mme.</span>
+        </div>
+        <div class="form-group">
+            
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <div class="form-group">
+            
+            <label for="prenom">Prenom : </label>
+            <input type="text" name="prenom" id="prenom">
+        </div>
+        <div class="form-group">
+            
+            <label for="mail">Mail : </label>
+            <input type="email" class="mail" name="mail" id="mail">
+        </div>
+        <div class="form-group">
+            
+            <label for="tel">Tel : </label>
+            <input type="tel" class="tel" name="tel" id="tel">
+        </div>
+        <div class="form-group">
+            
+            <label for="message">Message : </label>
+            <textarea name="message" id="message" rows="4" cols="50">Écrivez votre message</textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Valider">
+        </div>
+
+    </form>
+</main>
+<footer></footer>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<script type="text/javascript">
+    
+    $("#monImage").fadeOut(5000).delay(300).fadeIn(5000);
+    $("#checkAll").click(function(){
+        //on cherche les checkbox à l'intérieur de l'id magazine
+        var magazines = $('#magazine').find(':checkbox');
+        if (this.checked) { // si 'checkAll' est coché
+            magazines.prop('checked',true);
+        } else { // si on décoche 'checkAll'
+            magazines.prop('checked',false);
+        }
+    });
+
+
+
+    $('#message').keyup(function(){ // trim enlève les espaces
+            var nombreCaractere = $(this).val().length;
+            var nombreMots = jQuery.trim($(this).val()).split(' ').length;
+
+            if($(this).val() === ''){
+                nombreMots = 0;
+            }
+
+            var msg = ' ' + nombreMots + ' mot(s) | ' + nombreCaractere + ' Caractere(s) / 200';
+            $('#compteur').text(msg);
+
+            if (nombreCaractere > 200) {
+
+                $('#compteur').addClass("mauvais");
+                $('#message').addClass("mauvais-message");
+            } else {
+
+                
+                $('#message').removeClass("mauvais-message");
+                $('#compteur').removeClass("mauvais");
+            }
+        });
+</script>
+
+</body>
+</html>

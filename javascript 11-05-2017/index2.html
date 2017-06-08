@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Exo2 Javascript</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="test.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<main class="container">
+    <h1>Calcul : </h1>
+
+    <form method="post"> <!-- <form method="post" name="formule" onSubmit="return verif();" action="#"> -->
+        
+
+        
+
+        <label for="el_1">Nombre 1 : </label>
+        <input  id="el_1" name="el_1" type="text" onkeyup="sum_elements()">
+        <label for="el_2">Nombre 2 : </label>
+        <input  id="el_2" name="el_2" type="text" onkeyup="sum_elements()">
+        <label for="el_3">Nombre 3 : </label>
+        <input  id="el_3" name="el_3" type="text" onkeyup="sum_elements()">
+        <label for="el_4">Nombre 4 : </label>
+        <input  id="el_4" name="el_4" type="text" onkeyup="sum_elements()">
+        <label for="el_5">Nombre 5 : </label>
+        <input  id="el_5" name="el_5" type="text" onkeyup="sum_elements()">
+        <label for="el_6">Nombre 6 : </label>
+        <input  id="el_6" name="el_6" type="text" onkeyup="sum_elements()"><br><br>
+        <label>TOTAL : </label>
+        <input  id="somme" name="somme" type="text" onkeyup="sum_elements()">
+
+
+        <!-- <div class="form-group">
+            <input type="submit" value="Valider">
+        </div> -->
+
+    </form>
+
+
+    <form method="post">
+        <div class="well">
+            <strong><h1>PANIER</h1></strong>
+            <ul class="list-group facturations">
+                <li class="list-group-item list-group-item-success">
+                    <strong><h3>Billet Match : </h3></strong><hr>
+                    Quantité:
+                    <input type="text" name="quant" class="quantite watch" value=1 >
+                    Prix : 
+                    <input type="text" name="price" class="price watch" value=25 >
+                    <strong>Total : </strong>
+                    <input type="text" name="totalAPayer" id="to_1" class="totalAPayer"><strong>€</strong><br>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <strong><h3>Billet Train : </h3></strong><hr>
+                    Quantité:
+                    <input type="text" name="quant" class="quantite watch" value=2 >
+                    Prix : 
+                    <input type="text" name="price" class="price watch" value=50 >
+                    <strong>Total : </strong>
+                    <input type="text" name="totalAPayer" id="to_2" class="totalAPayer"><strong>€</strong><br>
+                </li>
+                <li class="list-group-item list-group-item-win">
+                    <strong><h3>Billet Musée : </h3></strong><hr>
+                    Quantité:
+                    <input type="text" name="quant" class="quantite watch" value=3 >
+                    Prix : 
+                    <input type="text" name="price" class="price watch" value=15 >
+                    <strong>Total : </strong>
+                    <input type="text" name="totalAPayer" id="to_3" class="totalAPayer"><strong>€</strong><br>
+                </li>
+                <li class="list-group-item list-group-item-victory">
+                    <strong><h3>Billet Avion : </h3></strong><hr>
+                    Quantité:
+                    <input type="text" name="quant" class="quantite watch" value=4 >
+                    Prix : 
+                    <input type="text" name="price" class="price watch" value=180 >
+                    <strong>Total : </strong>
+                    <input type="text" name="totalAPayer" id="to_4" class="totalAPayer"><strong>€</strong><br> <!-- oninput="aPayerParArticle();sommeAll();" -->
+                </li>
+            </ul>
+            <strong>NET À PAYER : </strong><hr>
+            <strong>Total : </strong>
+            <input type="text" id="somme1" name="somme1" onkeyup="sommeAll()"><strong>€</strong><br> <!-- aPayerParArticle() -->
+            <div id="totalPanier">
+                <strong>Net à Payer :
+                <input type="text" name="totalPanier" class="totalPanier">€</strong>
+            </div>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <script type="text/javascript" src="test.js"></script>
+    <script>
+
+        // Appel de la méthode pour éxecuter le js et avoir le champ total
+        aPayerParArticle();
+        sum_elements_panier();
+
+        // rendre actif l'evenement lors du changement de la page
+        // ne marche pas si on le met en haut de la page
+        document.querySelectorAll('.facturations .watch').forEach(function(field){
+            field.onkeyup = function(){
+
+                aPayerParArticle();
+            };
+        });
+
+        // Total Panier à payer
+        document.querySelectorAll('.totalPanier').forEach(function(field){
+            field.onkeyup = function(){
+                sum_elements_panier();
+            };
+        });
+    </script>
+</footer> 
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page d'administration</title>
+</head>
+
+<body>
+
+<header>
+    <img src="../images/logo.png">
+
+    <nav style="background: red;">
+        
+        <ul style="border:5px solid blue;">
+            <li><a href="../index.html">Homepage</a></li>
+            <li><a href="liste-etudiants.html">Liste des étudiants</a></li>  <!-- liste ordonnée -->
+            <li><a href="administration.html">Administration</a></li>
+             <!-- <li>
+                <ol>  liste dans une liste 
+                    <li>voiture</li>
+                    <li>vélo</li>
+                </ol>
+                
+            </li>-->
+        </ul>
+
+        <ol>         <!-- liste non ordonnée -->
+            <li><a href="pages/liste-etudiants.html">Liste des étudiants</a></li>
+            <li><a href="pages/administration.html">Administration</a></li>
+        </ol>
+    </nav>
+</header>
+
+
+
+
+<article>
+    <nav>
+        coordonnees
+    </nav>
+
+    <nav>
+        A PROPOS D’ASTON, ÉCOLE D’INFORMATIQUE
+        Une vision … : celle d’une École ouverte et “connectée”, où chacun peut apprendre, communiquer, partager sans réserve et libérer son potentiel. 
+        … une vocation : donner à chacun la possibilité de réaliser son potentiel en facilitant l’accès à un enseignement de qualité, grâce aux technologies. 
+    </nav>
+
+
+
+</article>
+<section>
+
+    <img src="images/ecole.jpg" height="400">
+
+
+</section>
+
+<footer>
+    <nav>
+        
+        <ul>
+            <li><a href="pages/liste-etudiants.html">Liste des étudiants</a></li>  <!-- liste ordonnée -->
+            <li><a href="pages/administration.html">Administration</a></li>
+             <!-- <li>
+                <ol>  liste dans une liste 
+                    <li>voiture</li>
+                    <li>vélo</li>
+                </ol>
+                
+            </li>-->
+        </ul>
+    </nav>
+
+
+    <nav>
+        
+        <ul>
+            <li><img src="../images/image1.png"></li>
+            <li><img src="../images/image2.png"></li>
+            <li><img src="../images/image3.png"></li>
+            <li><img src="../images/image4.png"></li>
+            <li><img src="../images/image5.png"></li>
+            <li><img src="../images/image6.png"></li>
+        </ul>
+    </nav>
+
+    <nav>
+        
+        <ul>
+            <li><img src="../images/image7.png"></li>
+            <li><img src="../images/image8.png"></li>
+            <li><img src="../images/image9.png"></li>
+            <li><img src="../images/image10.png"></li>
+            <li><img src="../images/image11.png"></li>
+            <li><img src="../images/image12.png"></li>
+        </ul>
+    </nav>
+
+</footer>
+
+<main>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Valeur par défaut" placeholder="Exemple de valeur">
+        </div>
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" value="Valeur par défaut" placeholder="Exemple de valeur">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" value="Valeur par défaut" placeholder="Exemple de valeur">
+        </div>
+
+        
+
+        <div>
+            
+            <textarea rows="4" cols="50">BEAUCOUP</textarea>
+            
+            <input type="submit" value="Envoyer">
+            <select id="stylo" multiple>
+                <option value="bic">Bic</option>
+                <option value="reynolds">Reynolds</option>
+                <option value="carrefour">Carrefour</option>
+                <option value="auchan">Auchan</option>
+                <option value="lexar">Lexar</option>
+                <option value="aldi">Aldi</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="civilite">Civilité</label>
+            <input type="radio" name="civilite" value="m" checked><span>M.</span>
+            <input type="radio" name="civilite" value="mme"><span>Mme.</span>
+        </div>
+        
+        <div>
+            <label for="voiture">Voiture</label>
+            <input type="checkbox" name="voiture1" value="lambo"><span>Lamborgini</span>
+            <input type="checkbox" name="voiture2" value="jeremy" checked="checked"><span>Ferrari</span>
+        </div>
+
+
+        <div>
+            <label for="hungry">A manger</label>
+            <select id="hungry">
+                <option value="mcdonalds">Mc Donalds</option>
+                <option value="quick" selected>Quick</option>
+                <option value="fast">Fast</option>
+                <option value="pizza_pino">Pizza pino</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Valider">
+        </div>
+
+    </form>
+
+</main>
+</body>
+</html>

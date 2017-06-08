@@ -1,0 +1,39 @@
+.tableau img{
+    border: 30px solid;
+    border-image: linear-gradient(red, yellow) 10;
+    padding: 20px;
+}
+
+
+table.equipe img, div.equipe img{
+
+
+    height : 100px;
+}
+
+
+#ageHeader:hover, #nomHeader:hover{
+    cursor:pointer;
+}
+
+.oldest {
+    color: orange;
+    font-weight : bold;
+}
+
+#formPlayer{
+    display: none;
+}
+
+#message {
+    padding : 3px;
+}
+
+
+/*.bg-success{
+    background-color: ;
+}
+
+.bg-success{
+    background-color: ;
+}*/

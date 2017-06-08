@@ -1,0 +1,232 @@
+/************************************************/
+/************************************************/
+/*********************  BODY  ****************/
+/************************************************/
+/************************************************/
+
+body {
+
+    /*background-image: url("../images/sony.jpg");*/
+    background: url(../images/bg.jpg) no-repeat;
+    width:800px;
+    margin: auto;  /*Centre automatiquemet*/
+    /*background-color: red;*/
+    /*background-size: 2000px 2000px;*/
+
+}
+
+
+/************************************************/
+/************************************************/
+/*********************  HEADERS  ****************/
+/************************************************/
+/************************************************/
+
+
+header{
+
+    margin-bottom: 20px; /* Laisse un espace entre le liens ou menu NAV et les NEWS+ARTICLES */
+    /*background-color: pink;*/
+}
+
+.logo {
+
+    float: left;
+    /*background-color: yellow;*/
+    margin-right: 10px;
+}
+
+.titre {
+
+    background-color: #3ca299;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.search {
+}
+
+header nav
+{
+
+    background-color: #0154a0; /* couleur du background des liens du menu */
+    border-radius: 25px; /*rend oval le nav de 25px*/
+    height: 35px; /*hauteur de l'arrière-plan des liens */
+    clear: both;
+}
+
+
+header nav ul li
+{
+    
+    list-style-type: none; /*retire les points de la liste à puces */
+    display: inline; /* aligne horizontalement les éléments de la liste en une ligne*/
+    line-height: 35px; /*abaisse la ligne de ces éléments de 35 pixels */
+    margin-left: 15px; /*écarte les éléments entre eux */
+    font-weight: bold; /*mettre en gras*/
+    
+
+}
+
+
+header nav ul li a
+{
+    
+    text-decoration: none; /*permet d'enlever les lignes des liens*/
+    color: white;
+
+}
+
+
+
+
+/************************************************/
+/************************************************/
+/*********************  SECTIONS  ****************/
+/************************************************/
+/************************************************/
+
+section
+{
+    width: 600px;
+    float: left;
+    /*background-color: red;*/
+
+}
+
+section article
+{
+    background-color: white;
+    border: 2px solid #0154a0; /*crée une bordure orange solid*/
+    /*border-radius: 25px;*/
+    margin-bottom: 20px;
+
+}
+
+section article h3
+{
+    background-color: #0154a0;
+    padding-left: 10px; /*décale le 1er caractère à droite de 10 pixels*/
+    color: white;
+
+}
+
+section article p
+{
+    /*padding: 2px 2px 2px 2px;  2px haut, 2px droite, 2px bas, 2px gauche*/
+    padding: 0px 5px; /* 0px au haut et au bas, 5px à gauche et à droite*/
+    text-align: justify;
+
+}
+
+.promo li
+{
+    display: inline-block;
+
+}
+
+.news{
+
+    font-size:15px;
+}
+
+/************************************************/
+/************************************************/
+/*********************  ASIDES  ****************/
+/************************************************/
+/************************************************/
+
+aside
+{
+
+    background-color: white;
+    margin-left: 605px;
+    border: 2px solid #0154a0;
+    /*overflow: auto;*/
+    /*border-bottom-right-radius : 20px;*/
+
+
+}
+
+aside h3
+{
+    background-color: #0154a0;
+    text-align: center;
+    margin-top: 0px; /*fait monter le titre tout en haut du bloc aside*/
+    color: white;
+
+}
+
+aside p
+{
+    
+    padding: 0px 5px; /* 0px au haut et au bas, 5px à gauche et à droite*/
+    text-align: justify;
+
+}
+
+
+/************************************************/
+/************************************************/
+/*********************  FOOTERS  ****************/
+/************************************************/
+/************************************************/
+
+footer {
+    background-color: #0154a0;
+    font-weight: bold;
+    /*text-align: center;*/
+    border-radius: 10px;
+    color: white;
+    overflow: auto;
+    clear: both; /*oblige le footer à se positionner sous l'élément flottant donc sous section et aside */
+}
+
+
+ul li {
+
+    list-style: none;
+    
+}
+
+ul li a {
+
+    text-decoration: none; /*permet d'enlever les lignes des liens*/
+    color: white;
+}
+
+.pied_page {
+
+    float: left;
+    width: 160px;
+    /*margin-right: 10px;*/
+    /*margin-left: 10px;*/
+    /*background: lightblue;*/
+}
+
+
+.secondary {
+    /*background: lightgreen;*/
+}
+
+
+
+.troisieme {
+    float: right;
+    height: 200px;
+    width: 470px;
+    background-color: burlywood;
+    /*background-image: url(../images/credit.jpg) no-repeat;*/
+    /*background-size: 200px 470px;*/
+}
+
+.subtitle {
+
+    color: black;
+    margin-left: 40px;
+}

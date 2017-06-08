@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aston</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style type="text/css">
+
+
+
+        a {
+            color: orange;
+        }
+
+        a:visited {
+            color: pink;
+        }
+
+        a:active { /*quand on clik ou enfonce sur le lien, il s'affiche en noir*/
+            color: black;
+        }
+
+        nav li:hover a { /* lorsqu'on pointe sur les liens, les mots virent au vert */
+            color: green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <!-- <img src="images/logo.png"> -->
+    </div>
+
+    <nav>
+        
+        <ul class="blue">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="pages/liste-etudiants.html">Liste des étudiants</a></li>  <!-- liste de liens en header -->
+            <li><a href="pages/administration.html">Administration</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section> <!-- Formulaire -->
+    <form>
+        <table>
+            <tr>
+                <td align="right">
+                    <label for="pseudo">Pseudo :</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value=""/>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="mail">Mail :</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Votre mail" id="mail" name="mail" value="" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="mail2">Confirmation du mail :</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="mdp">Mot de passe :</label>
+                </td>
+                <td>
+                    <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="mdp2">Confirmation du mot de passe :</label>
+                </td>
+                <td>
+                    <input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td align="center">
+                <br />
+                    <input type="submit" name="forminscription" value="Valider" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</section>
+
+<aside class="top-sidebar">
+    <ul>
+        <li>ASTON ECOLE</li>
+        <li>19/21 rue du Mai 1945</li>
+        <li>94110 Arcueil</li>
+
+    </ul>
+</aside>
+
+<aside class="droite-sidebar">
+    A PROPOS D’ASTON, ÉCOLE D’INFORMATIQUE<br/>
+    Une vision … : celle d’une École ouverte et “connectée”, où chacun peut apprendre, communiquer, partager sans réserve et libérer son potentiel.<br/>
+    … une vocation : donner à chacun la possibilité de réaliser son potentiel en facilitant l’accès à un enseignement de qualité, grâce aux technologies
+</aside>
+
+
+
+<section>
+
+    <div class="image">
+        <!-- <img src="images/ecole.jpg" height="400"> -->
+    </div>
+
+</section>
+
+
+<footer class="mainFooter">
+    <nav>
+        <ul>
+            <li><a href="pages/liste-etudiants.html">Liste des étudiants</a></li>  <!-- liste de liens au footer -->
+            <li><a href="pages/administration.html">Administration</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="milieu">
+    
+        <ul>
+            <li><img src="images/image1.png"></li>
+            <li><img src="images/image2.png"></li>
+            <li><img src="images/image3.png"></li>
+            <li><img src="images/image4.png"></li>
+            <li><img src="images/image5.png"></li>
+            <li><img src="images/image6.png"></li>
+        </ul>
+    </div>
+
+    <div class="droit">
+        
+        <ul>
+            <li><img src="images/image7.png"></li>
+            <li><img src="images/image8.png"></li>
+            <li><img src="images/image9.png"></li>
+            <li><img src="images/image10.png"></li>
+            <li><img src="images/image11.png"></li>
+            <li><img src="images/image12.png"></li>
+        </ul>
+    </div>
+
+</footer>
+</body>
+</html>

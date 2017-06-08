@@ -1,0 +1,160 @@
+body {
+
+    margin: 0; /*place les éléments à 0px càd sans marge d'espace */
+    background: url('../images/bg.jpg')no-repeat;
+
+}
+
+header {
+
+    overflow: auto;
+}
+
+header nav
+{
+
+	background-color: #0154a0;
+	border-radius: 25px; /*rend oval le nav de 25px*/
+	height: 35px; 
+}
+
+a {
+
+    color: #123;
+    text-decoration: none;
+}
+
+nav {
+
+    float: right;
+    margin-right: 15px;
+
+}
+
+/*nav ul {
+
+    margin: 0;
+}*/
+
+header nav li {
+
+    display: inline-block; /* rend les éléments Homepage, Liste étu et administration horizontal */
+    margin-right: 10px;
+}
+
+nav li:hover {
+	text-decoration: none; /*underline  lorsqu'on pointe sur le lien, le lien est barré automatiquement*/
+}
+
+
+li {
+	list-style: none; /* enlève toutes les puces*/
+}
+
+
+.logo {
+
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    background: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.col-moitie {
+
+    width: 50%;
+    float: left;
+    
+}
+
+.image {
+
+	background: url(../images/ecole.jpg);
+}
+
+section
+{
+	width: 600px;
+	float: left;
+	background: url(../images/ecole.jpg) no-repeat;
+
+
+}
+
+section article
+{
+	background-color: white;
+	border: 2px solid #0154a0; /*crée une bordure orange solid*/
+	/*border-radius: 25px;*/
+	margin-bottom: 20px;
+
+}
+
+.top-sidebar {
+
+	width: 24%;
+	float: left;
+	margin-left: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	background-color: red;	
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+
+.droite-sidebar {
+
+	width: 24%;
+	float: left;
+	margin-left: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	background-color: red;	
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+
+
+.mainFooter {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: #666;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	color: #FFF;	
+}
+
+.milieu {
+	width: 100%;
+	float: right;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: green;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	color: #FFF;	
+}
+
+.droit {
+	width: 100%;
+	float: right;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: blue;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	color: #FFF;	
+}
